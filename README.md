@@ -1,4 +1,5 @@
 **Read in other languages: [Русский](README.md), [Polski](README.pl.md).**
+[Макет](https://www.figma.com/file/d3sbBOXtyGYif0VnDl1FFu/Antools)
 
 # Parcel template
 
