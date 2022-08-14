@@ -1,0 +1,52 @@
+.newcomer-section {
+    display: flex;
+    margin: 200px 108px;
+    width: 1224px;
+    padding-top: 20px;
+}
+
+.newcomer-about {
+    width: 427px;
+}
+
+.newcomer-about .subtitle {
+    margin-top: 30px;
+}
+
+.newcomer-about .btn {
+    display: block;
+    margin-top: 60px;
+}
+
+.newcomer-tools {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    row-gap: 50px;
+    column-gap: 24px;
+}
+
+.newcomer-tools-list {
+    position: relative;
+    width: 288px;
+    height: 284px;
+    display: inline-flex;
+    padding: 28px 22px;
+
+    background-color: #509ee1;
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+.btn {
+    display: block;
+    padding: 16px 40px;
+    background-color: #FF6E30;
+    border-radius: 8px;
+}
+
+.flex {
+    display: flex;
+}

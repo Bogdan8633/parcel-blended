@@ -1,0 +1,35 @@
+.footer{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-link{
+width: 260px;
+height: 183px;
+margin-left: 108px;
+}
+
+.logo-footer-link{
+font-weight: 600;
+font-size: 22px;
+line-height: 33px;
+color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-copyright{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    padding-top: 25px;
+}
+
+.footer-paragraph{
+    margin-top: 21px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.79;
+    color: rgba(255, 255, 255, 0.55);
+}
+
