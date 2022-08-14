@@ -1,0 +1,61 @@
+.title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.3;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 25px;
+}
+
+.become-a-contributor {
+    padding-top: 250px;
+    padding-bottom: 240px;
+}
+
+.contributor {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.55);
+    width: 427px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.user-information {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 549px;
+    height: 64px;
+    background-color: #283036;
+    border-radius: 15px;
+}
+
+.user-mail {
+    background-color: transparent;
+    border: none;
+    padding-left: 25px;
+    width: 405px;
+    height: 100%;
+}
+
+.user-mail::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.38);
+}
+
+.btn-join-us {
+    background-color:#FF6E30;
+    border-radius: 8px;
+    padding: 12px 35px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin-right: 12px;
+}
