@@ -1,0 +1,56 @@
+.container{
+    display: inline-block;
+    justify-content: center;
+    margin: 0 auto;
+}
+.title{
+    margin-bottom: 25px;
+    font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 130%;
+        color: rgba(255, 255, 255, 0.9);
+}
+
+.subtitle{
+    font-family: 'Poppins';
+    width: 401px;
+    height: 60px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.55);
+}
+
+.tools-list__title{
+font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.78);
+}
+.tools-list__application{
+font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 165, 55, 0.55);
+}
+.tools-description{
+font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.55);
+}
+.tools-list__description{
+    display: flex;
+    flex-direction: column;
+    
+}
+.tools-list_container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
