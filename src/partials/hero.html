@@ -1,16 +1,35 @@
- <section>
+ <section class="hero">
         <h1 class="hero-title">Awesome tools for Designer & Developer.</h1>
-        <p class="hero-decst">
+        <p class="hero__desc">
           Antool is a web collection of information on paid or free Design and Development tools
         </p>
-        <a href="#" class="js-open-modal modal__link" data-modal="1">Открыть окно 1</a>
+        <form class="search-form">
+          <label>
+            <input type="text" name="search-field" class="search-field" placeholder="find more than 430+ tools...">
+            <svg class="search-icon" width="24.08" height="24">
+              <use href="images/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </label>
+          <button type="submit" class="search-button">Search</button>
+        </form>
+        <ul class="hero__socials">
+          <li>
+            <svg width="34" height="34">
+              <use href="images/symbol-defs.svg#icon-bx_bxl-facebook"></use>
+            </svg>
+          </li>
+          <li>
+            <svg width="34" height="34">
+              <use href="images/symbol-defs.svg#icon-bx_bxl-instagram"></use>
+            </svg>
+          </li>
+          <li>
+            <svg width="34" height="34">
+              <use href="images/symbol-defs.svg#icon-bx_bxl-twitter"></use>
+            </svg>
+          </li>
+        </ul>
+        <svg class="main-illustration" width="589" height="892">
+          <use href="images/symbol-defs.svg#icon-Illustration"></use>
+        </svg>
       </section>
-
-<div class="modal" data-modal="1">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
-  </svg>
-  <p class="modal__title">Заголовок окна 1</p>
-</div>
