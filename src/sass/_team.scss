@@ -1,0 +1,86 @@
+.team-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.team-img {
+  // position: absolute;
+  background-image: linear-gradient(
+      180deg,
+      rgba(40, 48, 54, 0) -44.51%,
+      #283036 179.88%
+    ),
+    url(../images/david-suarez.jpg);
+  width: 660px;
+  height: 830px;
+  background-repeat: no-repeat;
+}
+
+.team-img_efects {
+  background: #4a5156;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.title-team {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0000);
+}
+
+.team-list__subtitle {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+  color: rgba(255, 253, 253, 0.78);
+}
+.team-list__position {
+  font-family: 'Poppins';
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 253, 253, 0.55);
+}
+
+.team-list__quotes {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 250px;
+  line-height: 1.28;
+  background: linear-gradient(
+    188.88deg,
+    rgba(252, 252, 252, 0) 20.34%,
+    rgba(255, 255, 255, 0.5) 155.72%
+  );
+
+  background-clip: text;
+  color: transparent;
+
+  transform: rotate(19.17deg);
+}
+
+.team-list__text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.015em;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.wrapper__team {
+  position: absolute;
+  background: rgba(40, 48, 54, 0.2);
+  backdrop-filter: blur(50px);
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-bottom: 16px;
+  padding-left: 23px;
+}
