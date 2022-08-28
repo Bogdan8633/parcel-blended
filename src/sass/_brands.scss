@@ -87,3 +87,19 @@
   background: #ff6e30;
   border-radius: 8px;
 }
+
+.brands-container {
+  background: linear-gradient(
+      0deg,
+      rgba(44, 53, 61, 0.2),
+      rgba(44, 53, 61, 0.2)
+    ),
+    linear-gradient(
+      92.39deg,
+      rgba(255, 255, 255, 0.05) -4.6%,
+      rgba(255, 255, 255, 0) 96.79%
+    );
+
+  backdrop-filter: blur(50px);
+  border-radius: 25px;
+}
