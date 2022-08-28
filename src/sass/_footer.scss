@@ -1,6 +1,6 @@
 .footer{
     display: flex;
-    align-items: center;
+    align-items:center;
 
 }
 
@@ -33,3 +33,51 @@ color: rgba(255, 255, 255, 0.9);
     color: rgba(255, 255, 255, 0.55);
 }
 
+.footer-contact-us{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 20px;
+}
+
+
+.contact-us-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.categories__footer {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+}
+.categories__links{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.info__footer-company{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.info__company-links{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.55);
+}
