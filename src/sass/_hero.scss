@@ -1,5 +1,5 @@
 .hero {
-    position: relative;
+    // position: relative;
 }
 
 .hero-title {
@@ -12,6 +12,10 @@
     line-height: 1.4;
     
     color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-title__point {
+    color: #FF6E30;
 }
 
 .hero__desc {
@@ -28,12 +32,14 @@
 
 .search-form {
     position: relative;
+    width: 500px;
+    margin-bottom: 122px;
 }
 
 .search-field {
-    width: 500px;
+    width: 100%;
     height: 65px;
-    margin-bottom: 122px;
+    padding-left: 55px;
     background: #283036;
     border-radius: 15px;
     border: none;
@@ -41,9 +47,16 @@
 
 .search-icon {
     position: absolute;
+    left: 21;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .search-button {
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 130.43px;
     height: 48px;
 
@@ -64,6 +77,8 @@
 .main-illustration {
     position: absolute;
     right: 0;
+    top: 132px;
+    width: 589px;
 }
 
 .hero__socials {
