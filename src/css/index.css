@@ -739,16 +739,26 @@ button {
   height: 64px;
   background: #283036;
   border-radius: 15px;
+  border: 1px solid #283036;
 }
 
 .btn-search {
   position: absolute;
   width: 130.43px;
   height: 48px;
-  left: 464.19px;
-  top: 476px;
+  top: 50%;
+  transform: translateY(-50%) translateX(-105%);
   background: #FF6E30;
   border-radius: 8px;
+}
+.btn-search::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-image: url(../images/hero2/search.svg);
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 .background-img2 {
