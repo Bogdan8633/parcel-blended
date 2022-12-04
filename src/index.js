@@ -51,5 +51,3 @@ function morePopularPhotos(event) {
 pagination.on('afterMove', morePopularPhotos);
 
 
-
-// https://api.unsplash.com/search/photos?page=1&query=office&client_id=LxvKVGJqiSe6NcEVZOaLXC-f2JIIWZaq_o0WrF8mwJc
