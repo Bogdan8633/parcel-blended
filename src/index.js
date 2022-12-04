@@ -14,7 +14,7 @@ const options = {
   firstItemClassName: 'tui-first-child',
   lastItemClassName: 'tui-last-child',
   template: {
-    page: '<a href="#" class="tui-page-btn">{{page}}</a>',
+    page: '<a href="#" class="tui-custom">{{page}}</a>',
     currentPage:
       '<strong class="tui-page-btn tui-is-selected">{{page}}</strong>',
     moveButton:
@@ -37,22 +37,34 @@ const pagination = new Pagination('pagination', options);
 const page = pagination.getCurrentPage();
 const unsplashApi = new UnsplashAPI();
 
-unsplashApi.getPopularPhotos(page).then(data => {
-  pagination.reset(data.total);
-  const markup = createGalleryCards(data.results);
-  refs.galleryListEl.innerHTML = markup;
-});
+unsplashApi
+  .getPopularPhotos(page)
+  .then(data => {
+    pagination.reset(data.total);
+    const markup = createGalleryCards(data.results);
+    refs.galleryListEl.innerHTML = markup;
+    refs.paginationsEl.classList.remove('is-hidden');
+  })
+  .catch(error => {
+    Notify.failure('Щось пішло не так');
+  });
 
 function morePopularPhotos(event) {
   const currentPage = event.page;
-  unsplashApi.getPopularPhotos(currentPage).then(data => {
-    const markup = createGalleryCards(data.results);
-    refs.galleryListEl.innerHTML = markup;
-  });
+  unsplashApi
+    .getPopularPhotos(currentPage)
+    .then(data => {
+      const markup = createGalleryCards(data.results);
+      refs.galleryListEl.innerHTML = markup;
+    })
+    .catch(error => {
+      refs.paginationsEl.classList.add('is-hidden');
+      Notify.failure('Щось пішло не так');
+    });
 }
 
 pagination.on('afterMove', morePopularPhotos);
-console.dir(pagination);
+
 function onHandleSubmit(evt) {
   evt.preventDefault();
   const {
@@ -67,19 +79,38 @@ function onHandleSubmit(evt) {
   pagination.off('afterMove', morePopularPhotos);
   pagination.off('afterMove', moreFotosByQuery);
   pagination.on('afterMove', moreFotosByQuery);
-  unsplashApi.getFotosByQuery(page).then(data => {
-    pagination.reset(data.total);
-    const markup = createGalleryCards(data.results);
-    refs.galleryListEl.innerHTML = markup;
-  });
+  unsplashApi
+    .getFotosByQuery(page)
+    .then(data => {
+      if (data.results.length === 0) {
+        Notify.info(`По вашому запиту ${searchValue} ми не знайшли нічого`);
+        refs.paginationsEl.classList.add('is-hidden');
+        refs.galleryListEl.innerHTML = '';
+        return;
+      }
+      pagination.reset(data.total);
+      const markup = createGalleryCards(data.results);
+      refs.galleryListEl.innerHTML = markup;
+      refs.paginationsEl.classList.remove('is-hidden');
+    })
+    .catch(error => {
+      refs.paginationsEl.classList.add('is-hidden');
+      Notify.failure('Щось пішло не так');
+    });
 }
 
 function moreFotosByQuery(event) {
   const currentPage = event.page;
-  unsplashApi.getFotosByQuery(currentPage).then(data => {
-    const markup = createGalleryCards(data.results);
-    refs.galleryListEl.innerHTML = markup;
-  });
+  unsplashApi
+    .getFotosByQuery(currentPage)
+    .then(data => {
+      const markup = createGalleryCards(data.results);
+      refs.galleryListEl.innerHTML = markup;
+    })
+    .catch(error => {
+      refs.paginationsEl.classList.add('is-hidden');
+      Notify.failure('Щось пішло не так');
+    });
 }
 
 refs.formEl.addEventListener('submit', onHandleSubmit);
