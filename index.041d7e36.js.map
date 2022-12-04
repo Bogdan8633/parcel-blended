@@ -1,1 +1,0 @@
-{"mappings":"AAAAA,EAAE,cAAcC,MAAM,CACpBC,UAAU,EACVC,MAAM,EACNC,UAAW,uBACXC,UAAW","sources":["src/index.js"],"sourcesContent":["$('.team-list').slick({\n  infinite: true,\n  dots: true,\n  prevArrow: '.slider-buttons-prev',\n  nextArrow: '.slider-buttons-next',\n});\n"],"names":["$","slick","infinite","dots","prevArrow","nextArrow"],"version":3,"file":"index.041d7e36.js.map"}
